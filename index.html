@@ -14,7 +14,34 @@
 </head>
 <body>
 
-    <h1>hello world</h1>
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo logo">
+        <img class="logo__img" src="./images/logo.svg" alt="Site logo" width="48" height="48">
+      </a>
+
+      <button type="button" class="header__btn btn btn__toggler--js">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header__nav">
+        <nav class="nav">
+          <button class="nav__close nav__close--js"><i class="fa-solid fa-xmark"></i></button>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active"><a href="#" class="nav__link">00 Menu</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">01 Destination</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">02 Crew</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">03 Technology</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+
   <script src="/js/index.js"></script>
 </body>
 </html>
