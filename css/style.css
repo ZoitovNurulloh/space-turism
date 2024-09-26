@@ -86,6 +86,10 @@ body {
   font-family:var(--barlow-normal);
   font-size: 1.125rem;
   line-height: 180%;
+  background-image: url(../images/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 img {
@@ -143,6 +147,13 @@ input:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+  body {
+  background-image: url(../images/background-home-tablet.jpg);
+  }
+
+  body {
+  background-image: url(../images/background-home-mobile.jpg);
+  }
 
 
 /* RETINA BACKGROUND IMAGES */
