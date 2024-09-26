@@ -81,8 +81,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--dark);
+  color: var(--white);
   font-family:var(--barlow-normal);
   font-size: 1.125rem;
   line-height: 180%;
