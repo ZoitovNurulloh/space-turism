@@ -282,6 +282,8 @@ img {
   color: var(--dark);
   border-radius: 50%;
   cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 1rem;
 }
 
 .space__link::before {
