@@ -419,6 +419,38 @@ img {
   .nav__close {
     display: block;
   }
+
+  .space {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .space__heading--travel {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  .space__heading {
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  .space__description {
+    font-size: 0.9375rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .space__link {
+    width: 9rem;
+    height: 9rem;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+
+  .space__link::before {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 @media only screen and (max-width:400px) {
