@@ -309,6 +309,26 @@ img {
     padding-left: 5rem;
     padding-right: 4rem;
   }
+
+  .space {
+    height: auto;
+  }
+
+  .space__container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .space__content {
+    margin: 0 auto 4.125rem auto;
+  }
+
+  .space__link {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width:789px) {
