@@ -230,8 +230,7 @@ img {
 /* SPACE SECTION */
 .space {
   margin:8rem 0;
-  height: 100%;
-  max-height:22rem;
+  height:22rem;
 }
 .space__container {
   width: 100%;
