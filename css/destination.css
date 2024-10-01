@@ -143,3 +143,39 @@
 }
 
 @media only screen and (max-width:769px) {
+  body {
+    background-image: url(../images/background-destination-tablet.jpg);
+  }
+
+  .destination__container {
+    margin: 2.5rem auto;
+  }
+
+  .destination__heading {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 4.125rem;
+  }
+
+  .destination__img {
+    width: 18.75rem;
+  }
+
+  .destination__btns {
+    margin-bottom: 1.5rem;
+  }
+
+  .destination__name {
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  .destination__info {
+    margin-bottom: 1.5rem;
+  }
+
+  .destination__inner {
+    padding-top: 1.5rem;
+  }
+}
