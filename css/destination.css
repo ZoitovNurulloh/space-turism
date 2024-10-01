@@ -179,3 +179,53 @@
     padding-top: 1.5rem;
   }
 }
+
+@media only screen and (max-width:376px) {
+  body {
+    background-image: url(../images/background-destination-mobile.jpg);
+  }
+
+  .destination__container {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .destination__heading {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .destination__img {
+    width: 9.375rem;
+    margin-bottom: 3.625rem;
+  }
+
+  .destination__btns {
+    margin-bottom: 2.375rem;
+  }
+
+  .destination__link {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .destination__name {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .destination__info {
+    font-size: 0.9375rem;
+    line-height: 180%;
+  }
+
+  .destination__inner {
+    flex-direction: column;
+  }
+
+  .destination__avg {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+}
