@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Tourism</title>
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/destination.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo logo">
+        <img class="logo__img" src="./images/logo.svg" alt="Site logo" width="48" height="48">
+      </a>
+
+      <button type="button" class="header__btn btn btn__toggler--js">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header__nav">
+        <nav class="nav">
+          <button class="nav__close nav__close--js"><i class="fa-solid fa-xmark"></i></button>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">00 Menu</a></li>
+            <li class="nav__item nav__item--active"><a href="#" class="nav__link">01 Destination</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">02 Crew</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">03 Technology</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main-content">
+    <section class="destination">
+      <div class="destination__container">
+        <h3 class="destination__heading"><span class="destination__heading--num">01</span>PICK YOUR DESTINATION</h3>
+
+        <div class="destination__wrapper">
+          <img id="destination__img" class="destination__img" src="./images/image-moon.png" alt="Image moon" width="480" height="480">
+          <div class="destination__content">
+            <div class="destination__btns">
+              <button class="destination__link btn__destination--js link__active">Moon</button>
+              <button class="destination__link btn__destination--js">Mars</button>
+              <button class="destination__link btn__destination--js">Europa</button>
+              <button class="destination__link btn__destination--js">Titan</button>
+            </div>
+
+            <h2 id="destination__name" class="destination__name">Moon</h2>
+            <p id="destination-moon" class="destination__info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+            <div class="destination__inner">
+              <div class="destination__avg">
+                <p  class="destiantion__distance">AVG. DISTANCE</p>
+                <p id="destiantion__distance" class="destiantion__km">384,800 km</p>
+              </div>
+
+              <div class="destination__est">
+                <p class="destiantion__distance">Est. travel time</p>
+                <p id="destination__travel" class="destiantion__km">3 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
