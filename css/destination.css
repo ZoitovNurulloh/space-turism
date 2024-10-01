@@ -1,3 +1,7 @@
+body {
+  background-image: url(../images/background-destination-desktop.jpg);
+}
+
 /* CUSTOM PROPS */
 :root {
   /* COLORS */
