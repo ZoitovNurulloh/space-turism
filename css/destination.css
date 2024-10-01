@@ -1,0 +1,14 @@
+/* CUSTOM PROPS */
+:root {
+  /* COLORS */
+  --dark:#0B0D17;
+  --blue-light:#D0D6F9;
+  --white:#fff;
+
+  /* FONTS */
+  --barlow-condensed-bold:"Barlow Condensed","Arial", sans-serif;
+  --barlow-condensed-normal:"Barlow Condensed", "Arial", sans-serif;
+  --barlow-normal:"Barlow", "Arial", sans-serif;
+  --bellefair:"Bellefair", "Arial", sans-serif;
+}
+
