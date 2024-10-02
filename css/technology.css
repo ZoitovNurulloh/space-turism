@@ -112,3 +112,41 @@ display: block;
   display: block;
 }
 
+@media only screen and (max-width:1440px) {
+  .technology__container {
+    margin-left: 4rem;
+}
+  .technology__content {
+    flex-direction: column;
+  }
+
+  .technology__slider {
+    flex-direction: row;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .slider__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .technology__info {
+    max-width: 26.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .technology__img {
+    width: 37.5rem;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .technology__wrapper {
+    align-items: stretch;
+  }
+  .technology__img {
+    width: 31.25rem;
+  }
+}
+
