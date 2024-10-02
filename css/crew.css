@@ -12,3 +12,7 @@
   --bellefair:"Bellefair", "Arial", sans-serif;
 }
 
+body {
+  background-image: url(../images/background-crew-desktop.jpg);
+}
+
