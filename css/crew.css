@@ -16,3 +16,82 @@ body {
   background-image: url(../images/background-crew-desktop.jpg);
 }
 
+.crew__container {
+  margin:3rem auto 0 auto;
+  width: 100%;
+  max-width: 71.875rem;
+  padding: 0px 1.25rem;
+}
+
+
+.crew__heading {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  font-weight: 400;
+  font-family: var(--barlow-condensed-normal);
+  letter-spacing: 4px;
+  margin-bottom: 3.375rem;
+}
+
+.crew__heading--num {
+  margin-right: 1.5rem;
+  letter-spacing: 4.72px;
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.crew__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.crew__content {
+  width: 100%;
+  max-width: 33.75rem;
+  text-transform: uppercase;
+}
+
+.crew__job {
+  font-family: var(--bellefair);
+  opacity: 0.5;
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  margin-bottom: 1rem;
+}
+
+.crew__name {
+  font-family: var(--bellefair);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.crew__description {
+  color: var(--blue-light);
+  margin-bottom: 10rem;
+}
+
+.slider__item {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color:var(--white);
+  opacity: 0.17;
+  border-radius: 50%;
+}
+
+.slider__item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.item__active, .slider__item:hover {
+  opacity: 1;
+}
+
+.crew__img {
+  width: 33.75rem;
+  display: block;
+}
+
