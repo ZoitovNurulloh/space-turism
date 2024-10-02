@@ -150,3 +150,37 @@ display: block;
   }
 }
 
+@media only screen and (max-width:935px) {
+  .technology__container {
+    width: 100%;
+    margin: 0;
+    margin-top: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .technology__wrapper {
+    flex-direction: column;
+  }
+
+  .technology__content {
+    order: 1;
+  }
+
+  .technology__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .technology__slider {
+    justify-content: center;
+    order: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .technology__info {
+    margin-right: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+}
