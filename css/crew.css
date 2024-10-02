@@ -114,3 +114,39 @@ body {
   }
 }
 
+@media  only screen and (max-width:769px) {
+  body {
+    background-image: url(../images/background-crew-tablet.jpg);
+  }
+
+  .crew__container {
+    margin-top: 2.5rem;
+  }
+
+  .crew__heading {
+    font-size: 1.25em;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+  }
+
+  .crew__job {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .crew__name {
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+  }
+
+  .crew__description {
+    font-size: 1rem;
+  }
+
+  .slider__item {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+}
+
