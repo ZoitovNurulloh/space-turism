@@ -159,3 +159,32 @@ body {
   }
 }
 
+@media only  screen and (max-width:378px) {
+  body {
+    background-image: url(../images/background-crew-mobile.jpg);
+  }
+
+  .crew__container {
+    margin-top: 1.5rem;
+  }
+
+  .crew__heading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .crew__job {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .crew__name {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .crew__description {
+    margin-bottom: 1.5rem;
+  }
+}
