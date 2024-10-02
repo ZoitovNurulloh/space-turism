@@ -223,3 +223,34 @@ display: block;
 }
 
 
+@media only screen and (max-width:376px) {
+  body {
+    background-image:url(../images/background-technology-mobile.jpg);
+  }
+
+  .technology__container {
+    margin-top: 1.5rem;
+  }
+
+  .technology__heading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .slider__item {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+  }
+
+  .technology__terminology {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+  }
+
+  .technology__name {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
