@@ -95,3 +95,22 @@ body {
   display: block;
 }
 
+@media  only screen and (max-width:971px) {
+  .crew__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .crew__content {
+    margin-bottom: 2rem;
+  }
+
+  .crew__description {
+    margin-bottom: 3rem;
+  }
+
+  .crew__img {
+    width: 27.875rem;
+  }
+}
+
