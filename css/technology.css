@@ -11,3 +11,8 @@
   --barlow-normal:"Barlow", "Arial", sans-serif;
   --bellefair:"Bellefair", "Arial", sans-serif;
 }
+
+body {
+  background-image:url(../images/background-technology-desktop.jpg);
+}
+
