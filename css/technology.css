@@ -184,3 +184,42 @@ display: block;
     text-align: center;
   }
 }
+
+@media only screen and (max-width:769px) {
+  body {
+    background-image:url(../images/background-technology-tablet.jpg);
+  }
+
+  .technology__container {
+    padding: 0;
+    text-align: center;
+  }
+  .slider__item {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .technology__info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .technology__terminology {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .technology__name {
+    font-size: 2.5rem;
+    line-height: 2.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .technology__description {
+    font-size: 1rem;
+  }
+}
+
+
