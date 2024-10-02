@@ -16,3 +16,99 @@ body {
   background-image:url(../images/background-technology-desktop.jpg);
 }
 
+.technology__container {
+  margin-top: 3rem;
+  margin-left: 10.3125rem;
+  text-transform: uppercase;
+}
+
+.technology__heading {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  font-family: var(--barlow-condensed-normal);
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 5.625rem;
+}
+
+.technology__heading--num {
+  font-weight: 700;
+  letter-spacing: 4.72px;
+  margin-right: 1.5rem;
+  opacity: 0.25;
+}
+
+.technology__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology__content {
+  display: flex;
+}
+
+.technology__slider {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.slider__item {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-family: var(--bellefair);
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.slider__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.slider__item--active, .slider__item:hover {
+  background-color:var(--white);
+  color: var(--dark);
+}
+
+.technology__info {
+  width: 100%;
+  max-width: 30.625rem;
+  margin-right: 1rem;
+}
+
+.technology__terminology {
+  opacity: 0.5;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-family: var(--bellefair);
+  margin-bottom: 1rem;
+}
+
+.technology__name {
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-family: var(--bellefair);
+  margin-bottom: 1.5rem;
+}
+
+.technology__description {
+  color: var(--blue-light);
+  text-transform:none;
+}
+
+.technology__picture {
+display: block;
+}
+
+.technology__img {
+  width: 44.25rem;
+  display: block;
+}
+
