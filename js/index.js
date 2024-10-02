@@ -13,6 +13,8 @@ elBtnClose.addEventListener("click", () => {
   elHeader.classList.remove(modifiers.elHeaderOpenEls);
 })
 
+
+//DESTINATION SECTION SCRIPT
 const destinationBtn = document.querySelectorAll(".btn__destination--js");
 const btnInfo = document.getElementById("destination-moon");
 const btnName = document.getElementById("destination__name");
@@ -58,5 +60,41 @@ destinationBtn.forEach((btn) => {
     }).catch((err) => {
       console.log(err);
     })
+  })
+})
+
+
+//CREW SECTION SCRIPT
+const crewBtn = document.querySelectorAll(".slider__item--js");
+const crewJob = document.querySelector("#crew__job");
+const crewName = document.querySelector("#crew__name");
+const crewInfo = document.querySelector("#crew__info");
+const crewImg = document.querySelector("#crew__img");
+
+crewBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const btnDataName = btn.dataset.name;
+
+
+    crewBtn.forEach(el => el.classList.remove("item__active"))
+    btn.classList.add("item__active")
+
+    fetch("../json/data.json")
+    .then((data) => {
+      return data.json()
+    })
+    .then((data) => {
+      const crewMember = data.crew.find((member) => member.name === btnDataName);
+
+      if(crewMember) {
+      crewJob.textContent = crewMember.role;
+      crewName.textContent = crewMember.name;
+      crewInfo.textContent = crewMember.bio;
+      crewImg.setAttribute("src", crewMember.images.png);
+      }else {
+        console.log("err");
+      }
+    })
+    .catch((err) => {console.log(err)})
   })
 })
