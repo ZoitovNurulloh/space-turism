@@ -98,3 +98,57 @@ crewBtn.forEach(btn => {
     .catch((err) => {console.log(err)})
   })
 })
+
+
+//TECHNOLOGY SECTION SCRIPT
+let screenWidth = window.innerWidth;
+const btnTechno = document.querySelectorAll(".techno__item--js");
+const technoName = document.querySelector("#techno__name")
+const technoInfo = document.querySelector("#techno__info")
+const technoImg = document.querySelector("#techno__img")
+
+const widthLaptop = setInterval(() => {
+  return window.innerWidth;
+}, 500)
+
+
+const getDatA = async (resurse) => {
+  const request = await fetch(resurse);
+  if (request.status != 200) {
+    throw new Error("Xato bor bolam")
+  }
+
+  const data = await request.json();
+  return data;
+}
+
+
+
+btnTechno.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const btnDataName = btn.dataset.item;
+
+    btnTechno.forEach(el => el.classList.remove("slider__item--active"))
+    btn.classList.add("slider__item--active");
+
+    getDatA("../json/data.json")
+    .then((data) => {
+      const technoMember = data.technology.find((member) => member.name === btnDataName);
+      if (technoMember) {
+        console.log(technoMember);
+        technoName.textContent = technoMember.name;
+        technoInfo.textContent = technoMember.description
+
+        if(widthLaptop > 935) {
+          technoImg.setAttribute("src", technoMember.images.portrait)
+        }else if(widthLaptop < 935){
+          technoImg.setAttribute("src", technoMember.images.landscape)
+        }
+      }
+
+    })
+    .catch((err) => {
+      console.log(err.message);
+    })
+  })
+})
