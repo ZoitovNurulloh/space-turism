@@ -150,3 +150,12 @@ body {
   }
 }
 
+@media only  screen and (max-width:561px) {
+  .crew__container {
+    text-align: center;
+  }
+  .crew__img {
+    width: 17rem;
+  }
+}
+
